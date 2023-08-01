@@ -8,6 +8,7 @@ import { AppProvider } from './context/AppContext';
 import Budget from './components/Budget';
 import Remaining from './components/Remaining';
 import ExpenseTotal from './components/ExpenseTotal';
+import Currency from './components/Currency';
 import ExpenseList from './components/ExpenseList';
 import ExpenseItem from './components/ExpenseItem';
 import AllocationForm from './components/AllocationForm';
@@ -17,32 +18,27 @@ const App = () => {
         <AppProvider>
             <div className='container'>
                 <h1 className='mt-3'>Company's Budget Allocation</h1>
-                    <div className='row mt-3'>
-                        {/* Add Budget component here under */}        
+                    <div className='row mt-3'>  
                         <div className='col-3'>
                             <Budget />
                         </div>
-                        
-                        {/* Add Remaining component here under */}        
+                           
                         <div className='col-3'>
                             <Remaining />
                         </div>
-                        
-                        {/* Add ExpenseTotal component here under */}        
+
                         <div className='col-3'>
-                        <ExpenseTotal />
+                            <ExpenseTotal />
                         </div>
                         
                         <div className='col-3'>
-                            <select>
-                                <option selected></option>
-                            </select>
+                            <Currency />
                         </div>
-                        {/* Add ExpenseList component here under */}         
+
                         <ExpenseList />
-                        {/* Add ExpenseItem component here under */}        
+
                         <ExpenseItem />
-                        {/* Add AllocationForm component here under */}        
+                             
                         <AllocationForm />
                 </div>
             </div>
