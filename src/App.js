@@ -33,9 +33,9 @@ const App = () => {
                         <div className='col-3'>
                             <Currency />
                         </div>
-
+                        <h2 className='mt-3'>Allocation</h2>
                         <ExpenseList />
-                             
+                        <h2 className='mt-3'>Change Allocation</h2>
                         <AllocationForm />
                 </div>
             </div>
