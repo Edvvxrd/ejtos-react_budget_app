@@ -19,8 +19,11 @@ const Budget = () => {
     };
 
     return (
-        <div className='alert alert-secondary'>
-            <label className='form-label'>Budget: {currency}</label>
+        <div className='alert alert-secondary input-group align-items-center'>
+            Budget:
+            <div className='input-group-prepend'>
+                <label className='input-group-text'>{currency}</label>
+            </div>
             <input 
                 type='number' 
                 className='form-control'
