@@ -3,16 +3,19 @@ import { AppContext } from '../context/AppContext';
 
 const Currency = () => {
     const { currency } = useContext(AppContext);
+    const { dispatch } = useContext(AppContext);
 
     const changeCurrency = (event) => {
-        // setCurrency(event.target.value);
-        console.log(currency);
+        dispatch({
+            type: 'CHG_CURRENCY',
+            payload: event.target.value
+        });
     }
 
     return (
         <div className='alert alert-success' onChange={changeCurrency}>
             <select className="form-select">
-                <option selected>({currency} Pound )</option>
+                <option value="£" selected>({currency} Pound )</option>
                 <option value="$">($ Dollar)</option>
                 <option value="€">(€ Euro)</option>
                 <option value="₹">(₹ Rupee)</option>
