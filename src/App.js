@@ -10,7 +10,6 @@ import Remaining from './components/Remaining';
 import ExpenseTotal from './components/ExpenseTotal';
 import Currency from './components/Currency';
 import ExpenseList from './components/ExpenseList';
-import ExpenseItem from './components/ExpenseItem';
 import AllocationForm from './components/AllocationForm';
 
 const App = () => {
@@ -36,8 +35,6 @@ const App = () => {
                         </div>
 
                         <ExpenseList />
-
-                        <ExpenseItem />
                              
                         <AllocationForm />
                 </div>
